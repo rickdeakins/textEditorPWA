@@ -59,8 +59,7 @@ module.exports = () => {
         {
           test: /\.m?js$/,
           exclude: /node_modules/,
-          // We use babel-loader in order to use ES6.
-          use: {
+git a          use: {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],

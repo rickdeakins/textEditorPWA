@@ -38,8 +38,8 @@ module.exports = () => {
         description: 'Text editor!',
         background_color: '#225ca3',
         theme_color: '#225ca3',
-        start_url: './',
-        publicPath: './',
+        start_url: '/',
+        publicPath: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
@@ -59,7 +59,7 @@ module.exports = () => {
         {
           test: /\.m?js$/,
           exclude: /node_modules/,
-git a          use: {
+          use: {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
